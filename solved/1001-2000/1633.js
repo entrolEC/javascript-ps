@@ -19,7 +19,7 @@ for(let k = 1; k < input.length+1; k++) {
                     b = dp[k-1][i][j-1] + input[k-1][1]
                 }
             }
-            dp[k][i][j] = Math.max(a, b, dp[k-1][i][j], dp[k][i][j])
+            dp[k][i][j] = Math.max(a, b, dp[k-1][i][j])
         }
     }
 }
