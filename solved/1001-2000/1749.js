@@ -1,3 +1,8 @@
+/*
+ (0, 0) 에서 (y, x) 까지의 합을 기록한 sum을 dp로 구하고,
+ getSum(y1, x1, y2, x2) = sum[y2][x2] - leftSum - topSum + dupSum
+ 4중 반복으로 브루트포스
+ */
 let input = require("fs")
     .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
     .toString()
